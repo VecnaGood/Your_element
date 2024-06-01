@@ -228,6 +228,8 @@ button {
 
 .Projects_title,
 .Sales_title {
+    max-width: 1400px;
+    margin: 0 auto;
     font-size: 36px;
     font-weight: 700;
     color: #043E52;
@@ -235,6 +237,8 @@ button {
 }
 
 .Investors_title {
+    max-width: 1400px;
+    margin: 0 auto;
     font-size: 36px;
     font-weight: 700;
     color: #043E52;
@@ -576,7 +580,7 @@ button {
 }
 
 .Contacts_inner {
-    padding: 110px 150px;
+    padding: 110px 270px;
 }
 
 .Contacts_inner-info {
