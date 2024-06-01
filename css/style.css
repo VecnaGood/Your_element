@@ -671,7 +671,7 @@ button {
 
 @media(max-width:1900px) {
     .mySwiper_Sales,.mySwiper {
-        overflow: visible;
+        overflow: hidden;
     }
 }
 
@@ -743,7 +743,6 @@ button {
 }
 
 @media(max-width:1024px) {
-
     .menu__list,
     .phone {
         font-size: 16px;
@@ -846,6 +845,9 @@ button {
     .Form_title {
         max-width: 1000px;
         padding: 0 10px;
+    }
+    .Contacts_inner {
+        padding: 110px 15px;
     }
 
     .footer_site {
@@ -1051,7 +1053,7 @@ button {
     }
 
     .Information_inner-list {
-        gap: 0 45px;
+        gap: 0 43px;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -1109,6 +1111,9 @@ button {
 
     .Team_background {
         height: 170vh;
+    }
+    .Contacts_inner {
+        padding: 110px 18px;
     }
 }
 
@@ -1561,7 +1566,7 @@ button {
 
 }
 
-@media(max-width:340px) {
+@media(max-width:360px) {
     .top__title {
         margin-bottom: 250px;
     }
