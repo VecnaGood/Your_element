@@ -1643,7 +1643,7 @@ button {
     }
 }
 
-@media(max-width:430px) {
+/* @media(max-width:420px) {
     .logo>img {
         width: 133px;
     }
@@ -1736,9 +1736,9 @@ button {
 
 
 
-}
+} */
 
-@media(max-width:414px) {
+@media(max-width:420px) {
 
     .menu_btn_item_one,
     .menu_btn_item_two,
