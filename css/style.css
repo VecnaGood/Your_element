@@ -21,10 +21,14 @@ button {
     background-color: transparent;
 }
 
+.top {
+    margin-bottom: 80px;
+}
+
 .container {
     max-width: 1420px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header_inner {
@@ -52,9 +56,9 @@ button {
 
 .menu_btn_active:nth-child(1) {
     transform: rotate(45deg);
+    margin-left: 3px;
     transition-duration: 0.5s;
     transform-origin: center;
-    position: absolute;
 }
 
 .menu_btn_active:nth-child(2) {
@@ -64,6 +68,7 @@ button {
 .menu_btn_active:nth-child(3) {
     transform: rotate(-45deg);
     transition-duration: 0.5s;
+    margin-left: -2px;
     transform-origin: center;
     position: absolute;
 }
@@ -113,7 +118,7 @@ button {
 }
 
 .Information {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .Information_inner-list {
@@ -201,7 +206,7 @@ button {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 45px);
+    bottom: var(--swiper-pagination-bottom, 30px);
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -233,27 +238,31 @@ button {
     font-size: 36px;
     font-weight: 700;
     color: #043E52;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .Investors_title {
-    max-width: 1400px;
-    margin: 0 auto;
     font-size: 36px;
     font-weight: 700;
     color: #043E52;
     margin-bottom: 90px;
-    padding: 0 10px;
+
 }
 
-.Team_title,
 .Form_title {
-    max-width: 1400px;
-    margin: 80px auto;
+    padding-bottom: 80px;
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-    padding: 0 15px;
+}
+
+.Team_title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+
 }
 
 .Contacts_title {
@@ -408,38 +417,41 @@ button {
 
 .Investors_background {
     position: relative;
-    background-image: url(/images/fons.jpg);
-    top: -280px;
+    background-color: #243746;
+    bottom: 600px;
     width: 100vw;
-    height: 35vh;
-    overflow: hidden;
-}
-
-.Investors_background-two {
-    position: relative;
-    background-image: url(/images/fons.jpg);
-    top: -287px;
-    width: 100vw;
-    height: 35vh;
-    overflow: hidden;
+    height: 70vh;
 }
 
 .Team_background {
     position: relative;
-    background-image: url(/images/fons.jpg);
-    top: -287px;
+    background-color: #243746;
+    bottom: 600px;
     width: 100vw;
     height: 120vh;
-    overflow: hidden;
+}
+
+.Form {
+    width: 0;
+    height: 0;
 }
 
 .Form_background {
     position: relative;
-    background-image: url(/images/fons.jpg);
-    top: -320px;
+    background-color: #243746;
+    background-image: url(/images/fons-2.svg);
+    background-repeat: no-repeat;
+    bottom: 600px;
     width: 100vw;
-    height: 70vh;
-    overflow: hidden;
+    height: 63vh;
+}
+
+.Contacts_background {
+    background-image: url(/images/Contats.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 62vh;
 }
 
 .Investors_wrapper-item {
@@ -485,12 +497,9 @@ button {
 }
 
 .Team_content-blok {
-    margin: 0 auto;
-    max-width: 1400px;
     display: grid;
+    gap: 40px 40px;
     grid-template-columns: auto auto;
-
-
 }
 
 .Team_blok-item {
@@ -498,39 +507,34 @@ button {
     width: 680px;
     height: 360px;
     background: #265663;
-    margin: 20px 20px;
+}
+
+.Team_item-box {
+    padding: 30px 20px;
 }
 
 .Team_inner-title {
     font-size: 34px;
     color: #ffffff;
     font-weight: 400;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .Team_inner-text {
+    padding-bottom: 200px;
     color: #839EA5;
-    padding: 20px 20px 230px 20px;
 }
 
 .Team_inner-email {
     color: #ffffff;
-    padding: 0 20px 0 20px;
 }
 
 .Form {
-    width: 100vw;
-    height: 32vh;
+    width: 0vw !important;
+    height: 0vh !important;
 }
 
-.Form_background-two {
-    background-image: url(/images/fons-2.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
+
 
 .Form_inner {
     margin: 0 auto;
@@ -572,15 +576,8 @@ button {
     background-color: #059B7E;
 }
 
-.Contacts_background {
-    background-image: url(/images/Contats.jpg);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 62vh;
-}
-
 .Contacts_inner {
-    padding: 110px 260px;
+    padding-top: 120px;
 }
 
 .Contacts_inner-info {
@@ -670,15 +667,89 @@ button {
 
 
 @media(max-width:1900px) {
-    .mySwiper_Sales,.mySwiper {
+
+    .mySwiper_Sales,
+    .mySwiper {
         overflow: hidden;
+    }
+
+    .Contacts_background {
+        height: 58vh;
+    }
+
+    .Investors_background {
+        bottom: 599px;
+        height: 70vh;
+    }
+
+    .Team_background {
+        bottom: 600px;
+        height: 100vh;
+    }
+
+    .Form_background {
+        bottom: 601px;
+        height: 59vh;
     }
 }
 
 
 @media(max-width:1600px) {
-    .Investors_inner {
-        height: 35vh;
+
+    .Investors_background {
+        bottom: 590px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 602px;
+    }
+
+    .Team_background {
+        bottom: 600px;
+        height: 120vh;
+    }
+
+    .Contacts_background {
+        height: 63vh;
+    }
+}
+
+@media(max-width:1400px) {
+    .Team_blok-item {
+        width: 650px;
+    }
+
+    .Investors_img {
+        width: 1330px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 428px;
+    }
+
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 428px !important;
+        height: 560px;
+    }
+
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        top: 270px;
+        left: 315px;
+    }
+
+
+    .Projecits_slide-price,
+    .Sales_slide-price {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 700;
     }
 }
 
@@ -731,21 +802,32 @@ button {
         width: 610px;
     }
 
-    .Team_inner-text {
-        color: #839EA5;
-        padding: 20px 20px 200px 20px;
+    .Team_item-box {
+        padding: 20px 20px;
     }
 
     .Team_inner-title {
-        max-width: 235px;
+        font-size: 30px;
+        width: 325px;
     }
+
+    .Team_inner-text {
+        color: #839EA5;
+        padding-bottom: 225px;
+    }
+
+
 
 }
 
 @media(max-width:1024px) {
-    .menu__list,
-    .phone {
+
+    .menu__list {
         font-size: 16px;
+    }
+
+    .phone {
+        display: none;
     }
 
     .Investors_wrapper {
@@ -757,7 +839,7 @@ button {
     }
 
     .Investors_img {
-        width: 1000px;
+        width: 990px;
     }
 
     .Investors_wrapper-item {
@@ -815,57 +897,68 @@ button {
         left: 228px;
     }
 
+
     .Team_blok-item {
         width: 460px;
         height: 320px;
     }
 
+    .Team_item-box {
+        width: 250px;
+        padding: 20px 20px;
+    }
+
     .Team_inner-title {
-        font-size: 28px;
+        width: 200px;
+        height: 70px;
     }
 
     .Team_inner-text {
-        padding: 20px 20px 155px 20px;
-        width: 230px;
+        width: 200px;
+        font-size: 14px;
+        height: 170px;
+        padding-bottom: 155px;
     }
+}
 
-    .Team-text {
-        padding: 20px 20px 185px 20px;
-    }
+.Team-text {
+    padding: 20px 20px 185px 20px;
+}
 
-    .Team_content-blok {
-        max-width: 1000px;
-    }
+.Team_content-blok {
+    max-width: 1000px;
+}
 
-    .Form_inner {
-        margin: 0 auto;
-    }
+.Form_inner {
+    margin: 0 auto;
+}
 
-    .Team_title,
-    .Form_title {
-        max-width: 1000px;
-        padding: 0 10px;
-    }
-    .Contacts_inner {
-        padding: 110px 15px;
-    }
+.Contacts_inner {
+    padding: 110px 15px;
+}
 
-    .footer_site {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 1000px;
-        margin: 0;
-        padding: 100px 10px;
-    }
+.footer_site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0;
+    padding: 100px 10px;
+}
 
-    .phone {
+.footer_list-icone {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+
+
+
+@media(max-width:900px) {
+    .Arrow {
         display: none;
     }
 
-}
-
-@media(max-width:900px) {
     .menu_list-active {
         box-shadow: 0px 10px 3px -5px rgba(0, 0, 0, 0.5);
     }
@@ -936,12 +1029,13 @@ button {
         padding: 20px 55px;
     }
 
+
     .Investors_wrapper {
         max-width: 890px;
     }
 
     .Investors_img {
-        width: 890px;
+        width: 870px;
         padding: 0 10px;
     }
 
@@ -963,56 +1057,42 @@ button {
         font-size: 45px;
     }
 
-    .Investors_blok-right {
+    .Investors_blok-right,
+    .Investors_blok-left {
         width: 500px;
         height: 300px;
         padding: 30px;
         margin: 0 10px;
     }
 
-    .Investors_blok-left {
-        width: 500px;
-        height: 300px;
-        padding: 30px;
-        margin: 0 5px;
-    }
 
-    .Team_background {
-        top: -288px;
-    }
-
-    .Team_inner-email {
-        padding-left: 15px;
-    }
 
     .Team_blok-item {
         width: 413px;
         height: 259px;
     }
 
-    .Team_inner-text {
-        padding: 20px 20px 90px 20px;
-        height: 126px;
+    .Team_item-box {
+        width: 220px;
     }
-
-    .Team-text {
-        padding: 20px 20px 75px 20px;
-    }
-
-    .Team_content-blok {
-        margin: 0 auto;
-        max-width: 900px;
-    }
-
 
     .Team_inner-title {
-        font-size: 30px;
+        font-size: 26px;
+    }
+
+    .Team_inner-text {
+        height: 140px;
+        padding-bottom: 135px;
     }
 
     .Form_inner {
         margin: 0;
         max-width: 900px;
         padding: 0 10px;
+    }
+
+    .Contacts_inner {
+        padding: 90px 15px;
     }
 
     .footer_inner-item {
@@ -1041,7 +1121,7 @@ button {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:800px) {
     .Information_inner-number {
         font-size: 36px;
     }
@@ -1069,13 +1149,13 @@ button {
 
     .Projecits_slide-img,
     .Sales_slide-img {
-        width: 230px;
+        width: 240px;
     }
 
 
     .Projecits_swiper-slide,
     .Sales_swiper-slide {
-        width: 230px !important;
+        width: 240px !important;
     }
 
     .Projecits_slide-logo,
@@ -1093,27 +1173,92 @@ button {
     }
 
     .Investors_img {
-        width: 765px;
+        width: 770px;
     }
+
 
     .Investors_blok-right,
     .Investors_blok-left {
         padding: 20px;
     }
 
+    .Team_background {
+        height: 100vh;
+    }
+
+    .Team_blok-item {
+        width: 365px;
+        height: 250px;
+    }
+
+    .Team_item-box {
+        padding: 15px 15px;
+    }
 
     .Team_content-blok {
-        margin: 0 auto;
-        max-width: 768px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        gap: 30px 40px;
     }
 
-    .Team_background {
-        height: 170vh;
-    }
     .Contacts_inner {
         padding: 110px 18px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 600px;
+    }
+
+    .footer_list-icone {
+        gap: 0 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .Investors_img {
+        width: 735px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 230px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 230px !important;
+    }
+
+    .Team_item-box {
+        width: 175px;
+        padding: 10px 10px;
+    }
+
+    .Team_content-blok {
+        display: grid;
+        gap: 25px 25px;
+    }
+
+    .Team_inner-text {
+        width: 160px;
+    }
+
+    .Team_blok-item {
+        width: 355px;
+        height: 240px;
+    }
+
+    .Team_inner-title {
+        font-size: 24px;
+    }
+
+    .Team_inner-text {
+        height: 100px;
+        padding-bottom: 120px;
+    }
+
+    .Contacts_inner {
+        padding: 90px 18px;
     }
 }
 
@@ -1170,6 +1315,11 @@ button {
         padding: 15px 117px;
     }
 
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+    }
+
     .Projecits_slide-btn,
     .Sales_slide-btn {
         font-size: 16px;
@@ -1194,6 +1344,19 @@ button {
         margin: 10px 10px;
     }
 
+    .Investors_container,
+    .Contacts_container {
+        padding: 0;
+    }
+
+    .Investors_background {
+        height: 24vh;
+    }
+
+    .Investors_title {
+        padding: 0 15px;
+    }
+
     .Investors_background {
         top: -150px;
     }
@@ -1205,30 +1368,42 @@ button {
 
     .Investors_img {
         width: 100%;
-        height: 350px;
+        height: 650px;
         padding: 0;
     }
 
     .Investors_subtitle {
-        font-size: 26px;
-        padding: 0 20px;
+        font-size: 28px;
+        line-height: 1.5;
+        height: 136px;
+        width: 300px;
+        top: 20px;
+        left: 25px
+    }
+
+    .Investors_blok-right,
+    .Investors_blok-left {
+        padding: 16px;
     }
 
     .Investors_info-btn {
-        padding: 15px 125px;
+        padding: 15px 170px;
+        font-weight: 600;
+        right: 21px;
     }
 
     .Investors_wrapper-item {
-        padding: 0 10px;
-        display: flex;
+        padding: 0;
         flex-wrap: wrap;
         gap: 20px;
+        position: relative;
+        position: relative;
+        bottom: 480px;
     }
 
     .Investors_blok-left,
     .Investors_blok-right {
-        width: 360px;
-        gap: 20px;
+        width: 440px;
         height: 160px;
         line-height: 1.5;
     }
@@ -1240,6 +1415,34 @@ button {
 
     .Investors_blok-text {
         font-size: 18px;
+    }
+
+    .Team_background {
+        height: 160vh;
+    }
+
+    .Team_content-blok {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Team_blok-item {
+        width: 450px;
+        height: 200px;
+    }
+
+    .Team_background {
+        height: 122vh;
+    }
+
+    .Team_item-box {
+        width: 300px;
+        padding: 15px 10px;
+    }
+
+    .Team_inner-title {
+        width: 230px;
+        height: 35px;
     }
 
     .Contacts_inner-info {
@@ -1256,30 +1459,40 @@ button {
         padding: 0;
     }
 
+    .Form_title {
+        padding-bottom: 30px;
+    }
+
+    .Form_inner {
+        position: relative;
+        bottom: -190px;
+    }
+
     .Form_inner-name {
         font-size: 16px;
-        width: 450px;
+        width: 435px;
         height: 40px;
         margin-bottom: 15px;
     }
 
     .Form_inner-phone {
         font-size: 16px;
-        width: 450px;
+        width: 435px;
         height: 40px;
     }
 
     .Form_item-btn {
         padding: 14px 190px;
-        width: 450px;
+        width: 435px;
         height: 50px;
     }
 
 }
 
 @media(max-width:440px) {
-    .header_logo {
-        width: 150px;
+    .Team_item-box {
+        width: 265px;
+        padding: 15px 10px;
     }
 
     .Information_inner-list {
@@ -1298,12 +1511,6 @@ button {
     .Form_title,
     .Investors_title {
         font-size: 24px;
-    }
-
-
-    .Team_inner-title,
-    .Team_inner-text {
-        padding-left: 15px;
     }
 
     .Projecits_swiper-slide,
@@ -1356,7 +1563,7 @@ button {
     .Form_inner-name,
     .Form_inner-phone,
     .Form_item-btn {
-        width: 420px;
+        width: 390px;
     }
 
     .Form_item-checkbox {
@@ -1364,7 +1571,7 @@ button {
     }
 
     .Form_item-btn {
-        padding: 14px 165px;
+        padding: 14px 150px;
     }
 
     .footer_site {
@@ -1376,7 +1583,7 @@ button {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:430px) {
     .logo>img {
         width: 133px;
     }
@@ -1409,34 +1616,6 @@ button {
         margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
     }
 
-    .Team_blok-item {
-        width: 385px;
-        height: 240px;
-    }
-
-    .Team_inner-title {
-        font-size: 20px;
-    }
-
-    .Team_inner-text {
-        height: 126px;
-        padding-bottom: 150px;
-        width: 200px;
-    }
-
-    .Team-text {
-        font-size: 12px;
-    }
-
-    .Team_text {
-        padding-bottom: 130px;
-    }
-
-
-    .Team_inner-email {
-        font-size: 14px;
-        padding-left: 10px;
-    }
 
     .Form_inner-name,
     .Form_inner-phone,
@@ -1446,6 +1625,15 @@ button {
 
     .Form_item-btn {
         padding: 14px 150px;
+    }
+
+    .Team_item-box {
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    .Investors_wrapper {
+        margin-bottom: 0;
     }
 
     .Investors_background-two {
@@ -1468,16 +1656,268 @@ button {
     }
 
     .Contacts_inner-info {
-        height: 386px;
+        padding: 25px 20px;
+        height: 300px;
+    }
 
+    .Team_background {
+        height: 120vh;
+    }
+
+    .Team_item-box {
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 605px;
     }
 
 
+
+}
+
+@media(max-width:414px) {
+
+    .menu_btn_item_one,
+    .menu_btn_item_two,
+    .menu_btn_item_three {
+        height: 12px;
+    }
+
+    .top__title {
+        font-size: 36px;
+        margin-bottom: 275px;
+    }
+
+    .Information_inner-list {
+        gap: 20px 33px;
+        padding: 0 15px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 184px !important;
+        height: 450px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 184px;
+        height: 190px;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 18px;
+    }
+
+
+    .open-cart {
+        font-size: 16px;
+        bottom: 30px;
+        right: 20px;
+        padding: 15px 100px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+    }
+
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 370px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 150px;
+    }
+
+    .Team_blok-item {
+        width: 380px;
+        height: 200px;
+    }
+
+    .Team_inner-title {
+        width: 150px;
+        height: 65px;
+    }
+
+    .Team_inner-text {
+        height: 50%;
+        padding-bottom: 57px;
+    }
+
+    .Investors_wrapper {
+        margin-bottom: 0;
+    }
+
+    .Investors_background-two {
+        top: -287px;
+        height: 42vh;
+    }
+
+    .Investors_subtitle {
+        font-size: 26px;
+        padding: 0;
+
+    }
+
+    .Investors_info-btn {
+        right: 30px;
+    }
+
+    .Contacts_info-item {
+        font-size: 16px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 300px;
+    }
+
+    .Team_background {
+        height: 120vh;
+    }
+
+    .Team_item-box {
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    .Form_background {
+        height: 69vh;
+        bottom: 605px;
+    }
+
+    .footer_list-icone {
+        gap: 0 30px;
+    }
+
+
+
+}
+
+@media(max-width:390px) {
+    .Information_inner-list {
+        gap: 15px 20px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        justify-content: center;
+    }
+
+    .open-cart {
+        right: 12px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 175px !important;
+        height: 400px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 175px;
+        height: 170px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 65px;
+        height: 65px;
+        top: 5px;
+        left: 7px;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        line-height: 1;
+    }
+
+    .Projecits_slide-btn,
+    .Sales_slide-btn {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 14px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 365px;
+    }
+
+    .Investors_info-btn {
+        right: 15px;
+    }
+
+    .Team_item-box {
+        width: 210px;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 345px;
+    }
+
+    .Form_item-btn {
+        padding: 14px 135px;
+    }
+
+    .Contacts_inner-info {
+        padding: 25px 20px;
+        height: 310px;
+        position: relative;
+        top: -30px;
+    }
 }
 
 @media(max-width:380px) {
     .top__title {
         margin-bottom: 275px;
+    }
+
+    .Investors_img {
+        width: 100%;
+        height: 600px;
+        padding: 0;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 290px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 95px;
+        right: 17px;
+    }
+
+    .Team_inner-title {
+        width: 144px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .Team_inner-text {
+        width: 100%;
+    }
+
+    .Team_inner-email {
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    .Form_item-btn {
+        padding: 17px 93px;
     }
 
     .Information_inner-list {
@@ -1513,7 +1953,7 @@ button {
     .Projecits_slide-btn,
     .Sales_slide-btn {
         font-size: 16px;
-        padding: 10px 14px;
+        padding: 10px 10px;
     }
 
     .Projecits_slide-logo,
@@ -1529,60 +1969,51 @@ button {
         line-height: 1;
     }
 
-    .Team_background {
-        height: 150vh;
-    }
-
-    .Team_inner-text {
-        padding-bottom: 140px;
-    }
-
-    .Team_text {
-        padding-bottom: 120px;
-    }
-
-    .Team_blok-item {
-        width: 340px;
-        height: 230px;
-    }
-
-    .Team_inner-title {
-        max-width: 190px;
-    }
-
     .Form_inner-name,
     .Form_inner-phone,
     .Form_item-btn {
-        width: 360px;
+        width: 335px;
     }
 
     .Form_item-btn {
-        padding: 14px 140px;
+        padding: 14px 130px;
+    }
+
+    .Team_item-box {
+        width: 200px;
     }
 
     .Contacts_inner-info {
-        height: 270px;
+        padding: 50px 20px;
+    }
+
+    .Contacts_inner-info {
+        height: 310px;
     }
 
 }
 
 @media(max-width:360px) {
     .top__title {
-        margin-bottom: 250px;
+        margin-bottom: 220px;
+        font-size: 32px;
     }
 
     .Information_inner-list {
-        gap: 40px 0px;
+        gap: 20px 0px;
         display: grid;
-        grid-template-columns: 139px 130px;
+        grid-template-columns: 205px 125px;
+        padding: 0;
     }
 
     .open-cart {
         padding: 15px 70px;
+        right: 22px;
     }
 
     .Investors_info-btn {
-        padding: 15px 105px;
+        padding: 15px 115px;
+        right: 17px;
     }
 
     .Projecits_slide-img,
@@ -1633,41 +2064,117 @@ button {
         margin-bottom: 10px;
     }
 
-    .Investors_img {
-        height: 280px;
-    }
-
     .Investors_subtitle {
         font-size: 20px;
     }
+
+    .Team_item-box {
+        width: 195px;
+    }
+
     .Team_blok-item {
-        width: 300px;
+        width: 330px;
         height: 180px;
     }
-    .Team_text {
-        padding-bottom: -42px;
-        font-size: 12px;
-        width: 165px;
-        height: 100px;
-        padding-bottom: 0;
-    }
+
     .Team_inner-text {
-        padding-bottom: 0;
-        height: 100px;
-        width: 165px;
+        height: 45%;
+        padding-bottom: 50px;
     }
-    .Form_inner-name, .Form_inner-phone, .Form_item-btn {
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
         width: 320px;
     }
+
     .Form_item-btn {
         padding: 14px 115px;
     }
+
     .Contacts_background {
         height: 30vh;
     }
-    .footer_site>p{
+
+    .footer_site>p {
         font-size: 14px;
         width: 360px;
         height: 40px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .open-cart {
+        padding: 15px 60px;
+        right: 10px;
+    }
+
+    .Projecits_swiper-slide,
+    .Sales_swiper-slide {
+        width: 140px !important;
+        height: 325px;
+    }
+
+    .Projecits_slide-img,
+    .Sales_slide-img {
+        width: 140px;
+        height: 125px;
+    }
+
+    .Projecits_slide-logo,
+    .Sales_slide-logo {
+        width: 55px;
+        height: 55px;
+        top: 5px;
+        left: 3px;
+    }
+
+    .Projecits_slide-text,
+    .Sales_cart-text {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .Projecits_slide-product,
+    .Sales_slide-product {
+        margin: 5px;
+    }
+
+    .Information_inner-list {
+        display: grid;
+        grid-template-columns: 175px 110px;
+        padding: 0;
+    }
+
+    .Team_item-box {
+        width: 150px;
+    }
+
+    .Form_inner-name,
+    .Form_inner-phone,
+    .Form_item-btn {
+        width: 277px;
+    }
+
+    .Investors_subtitle {
+        font-size: 23px;
+        line-height: 1.5;
+        height: 90px;
+        width: 290px;
+        left: 14px;
+    }
+
+    .Investors_blok-left,
+    .Investors_blok-right {
+        width: 295px;
+        height: 150px;
+    }
+
+    .Investors_info-btn {
+        padding: 15px 99px;
+        right: 10px;
     }
 }
