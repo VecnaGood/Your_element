@@ -91,7 +91,7 @@ button {
     color: #fff;
     flex-direction: column;
     justify-content: center;
-    background-image: url(images/top-1.jpg);
+    background-image: url(../images/top-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -439,7 +439,7 @@ button {
 .Form_background {
     position: relative;
     background-color: #243746;
-    background-image: url(images/fons-2.svg);
+    background-image: url(../images/fons-2.svg);
     background-repeat: no-repeat;
     bottom: 600px;
     width: 100vw;
@@ -447,7 +447,7 @@ button {
 }
 
 .Contacts_background {
-    background-image: url(images/Contats.jpg);
+    background-image: url(../images/Contats.jpg);
     background-repeat: no-repeat;
     position: relative;
     width: 100vw;
