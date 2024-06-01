@@ -669,7 +669,11 @@ button {
 
 
 
-
+@media(max-width:1900px) {
+    .mySwiper_Sales,.mySwiper {
+        overflow: visible;
+    }
+}
 
 
 @media(max-width:1600px) {
@@ -1398,10 +1402,6 @@ button {
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
-    }
-
-    .mySwiper_Sales {
-        overflow: visible;
     }
 
     .Team_blok-item {
