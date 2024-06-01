@@ -1643,7 +1643,7 @@ button {
     }
 }
 
-/* @media(max-width:420px) {
+@media(max-width:420px) {
     .logo>img {
         width: 133px;
     }
@@ -1736,9 +1736,9 @@ button {
 
 
 
-} */
+}
 
-@media(max-width:420px) {
+@media(max-width:414px) {
 
     .menu_btn_item_one,
     .menu_btn_item_two,
@@ -1796,7 +1796,7 @@ button {
     }
 
     .Form_item-btn {
-        padding: 14px 150px;
+        padding: 15px 139px;
     }
 
     .Team_blok-item {
@@ -1830,7 +1830,8 @@ button {
     }
 
     .Investors_info-btn {
-        right: 30px;
+        right: 8px;
+        padding: 15px 145px;
     }
 
     .Contacts_info-item {
@@ -1847,7 +1848,7 @@ button {
     }
 
     .Team_item-box {
-        width: 250px;
+        width: 230px;
         padding: 15px 10px;
     }
 
